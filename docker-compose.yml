@@ -11,6 +11,8 @@ services:
     build:
       context: dind/
     container_name: dind
+    privileged: true
+    user: root
   jenkins:
     build:
       context: jenkins/
